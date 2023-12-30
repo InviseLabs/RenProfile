@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34321.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenProfile", "RenProfile\RenProfile.csproj", "{EECB2C88-5D1F-49E0-881F-CCD7E9CBDB4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EECB2C88-5D1F-49E0-881F-CCD7E9CBDB4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EECB2C88-5D1F-49E0-881F-CCD7E9CBDB4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EECB2C88-5D1F-49E0-881F-CCD7E9CBDB4D}.Debug|x64.ActiveCfg = Debug|x64
+		{EECB2C88-5D1F-49E0-881F-CCD7E9CBDB4D}.Debug|x64.Build.0 = Debug|x64
+		{EECB2C88-5D1F-49E0-881F-CCD7E9CBDB4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EECB2C88-5D1F-49E0-881F-CCD7E9CBDB4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EECB2C88-5D1F-49E0-881F-CCD7E9CBDB4D}.Release|x64.ActiveCfg = Release|x64
+		{EECB2C88-5D1F-49E0-881F-CCD7E9CBDB4D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CAC81B3C-7B2C-4E4F-96E6-30D857C3610D}
+	EndGlobalSection
+EndGlobal
