@@ -1,4 +1,6 @@
 # RenProfile
+## Tool to Rename Profile Path in Windows Without Creating New User Account
+### Rename Windows Profile Path - Registry Find and Replace All
 
 A tool to rename the profile folder of your user account within Windows. Run from a separate administrator account. It recursively performs a `find and replace all` operation within the registry – a method I developed for this specific purpose – changing every instance of your old profile path to your new profile path. **Sounds dangerous, and it might be, but I've tested this successfully on Windows 11.**
 
