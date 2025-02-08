@@ -11,6 +11,7 @@ Technically, there's no reason why this *should* cause problems, except in poorl
 <br/>
 
 ## Troubleshooting Steps
+#### If renaming the user profile folder path causes issues with some applications, or otherwise doesn't work as expected, go through these troubleshooting steps.
 * **Double-Check Paths:** Carefully verify the old and new profile paths you entered. Even a small typo can cause issues. The paths should be the full, absolute paths (e.g., `C:\Users\OldUsername` and `C:\Users\NewUsername`), not relative paths.
 * **Check for Open Files/Processes:** Before running RenProfile, close all programs running under the user account you're modifying, then reboot. Open files or running processes can lock registry keys and prevent changes. Use Task Manager to ensure no lingering processes are associated with the target user.
 * **Run RenProfile Again:** It won't harm the system to reboot and run it again to ensure that all registry paths have been successfully modified. You could also use `msconfig`, select 🠆 Boot 🠆 Boot options 🠆 Safe mode 🠆 Network, which will reboot into Safe Mode with Networking, and from there you can run RenProfile again without having to worry about locking programs.
