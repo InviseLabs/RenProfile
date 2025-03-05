@@ -13,10 +13,10 @@ Technically, there's no reason why this *should* cause problems, except in poorl
 ## Usage Info
 RenProfile is a CLI app. It must be executed from a a separate Administrator account and run from an Admin terminal / CMD Prompt. It takes 2 required arguments and 1 optional argument. No other steps are necessary, RenProfile handles the `Find & Replace All` operation in the registry and renames the physical target user folder. However, after the operation navigate to `C:\Users` and verify the user's profile folder name was changed. If, for some reason, he user's folder name was not changed, then manually rename the folder, and reboot. Why this could happen: Occasionally, RenProfile may fail to rename the physical user folder due to NTFS permissions; in such circumstances, this is considered intended behavior, as we will not change NTFS permissions for you due to the implications this could cause. This is for the administrator, ie you, to figure out, if it comes to that. (You may want to use the move command to do this, *if* RenProfile experiences this issue.)
 
-Required Arguments:
+Required Arguments:<br/>
 RenProfile C:\Users\OldUserPath C:\Users\NewDesiredUserPath
 
-Optional Arguments:
+Optional Arguments:<br/>
 3rd argument, specify log file path where you want the log file saved. Example: `C:\IT\RenProfile.log`
 
 <br/>
