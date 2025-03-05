@@ -2,9 +2,24 @@
 ### Tool to Rename Profile Folder Path in Windows Without Creating New User Account
 #### Rename Windows Profile Path - Registry Find and Replace All
 
+(For usage info, see below the introduction.)
+
+## Introduction to RenProfile:  Use Cases and Considerations 
+
 RenProfile is a tool to rename the Windows profile folder path of your user account. Run from a separate administrator account. It recursively performs a `find and replace all` operation within the registry – a method I developed for this specific purpose – changing every instance of your old profile path to your new profile path. **Sounds dangerous, and it might be, but we've tested this successfully many times on Windows 10 and Windows 11, but it should work on Windows 7 and higher.**
 
 Technically, there's no reason why this *should* cause problems, except in poorly written programs that don't properly check the user account path using relevant APIs (like `%userprofile%`) or programs that hard-code this path in settings files (which no program *should* ever do). While some developers might follow these bad practices, in my testing, this seems rare. (Windows Server environments, for example, offer built-in user profile migration.) In such cases, you might need to inform the affected program of the new path.
+
+## Usage Info
+RenProfile is a CLI app. It must be executed from a a separate Administrator account and run from an Admin terminal / CMD Prompt. It takes 2 required arguments and 1 optional argument. No other steps are necessary, RenProfile handles the `Find & Replace All` operation in the registry and renames the physical target user folder. However, after the operation is completed, navigate to `C:\Users` and verify that the physical name was changed. If for some reason it wasn't, then manually rename the folder, and then reboot. occasionally, the app can fail to rename the physical target user folder due to NTFS permissions; and such circumstances, this is considered intended behavior, as the app will not change NTFS permissions. this is for the administrator, ie you, to figure out, if it comes to that. 
+
+Required Arguments:
+RenProfile C:\Users\OldUserPath C:\Users\NewDesiredUserPath
+
+Optional Arguments:
+3rd argument, specify log file path where you want the log file saved. Example: `C:\IT\RenProfile.log`
+
+<br/>
 
 **If RenProfile doesn't work or causes problems, follow these troubleshooting steps:**
 
